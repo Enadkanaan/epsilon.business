@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="إبسيلون للاستشارات — شركة استشارية متخصصة تساعد المنظمات الطموحة في قطر والمنطقة على تحديد استراتيجيتها وتصميم نماذج التشغيل وتعزيز الحوكمة وبناء الجاهزية للابتكار.">
+    <title>إبسيلون للاستشارات — من الطموح إلى الجاهزية التنظيمية</title>
+    <link rel="icon" type="image/png" href="assets/Symbol.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: 'Tajawal', system-ui, sans-serif; direction: rtl; text-align: right; }
+        .hero-trust { border-left: none; border-right: 3px solid var(--blue); padding-left: 0; padding-right: 14px; }
+        .hero-badge-1 { left: auto; right: -28px; }
+        .hero-badge-2 { left: auto; right: -28px; }
+        .about-visual::before { left: 20px; right: -20px; }
+        .service-card::before { transform-origin: right; }
+        .why-item { border-right: none; border-left: 1px solid rgba(255,255,255,0.07); }
+        .why-item:last-child { border-left: none; }
+        .why-item::before { transform-origin: right; background: linear-gradient(270deg, var(--blue), transparent); }
+        .positioning-item { border-right: none; border-left: 1px solid rgba(255,255,255,0.08); }
+        .positioning-item:last-child { border-left: none; }
+        .principal-linkedin { flex-direction: row-reverse; }
+        @media (max-width: 900px) {
+            .hero-badge-1 { right: 16px; left: auto; }
+            .hero-badge-2 { right: 16px; left: auto; }
+        }
+        @media (max-width: 640px) {
+            .positioning-item { border-left: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
+        }
+    </style>
+</head>
+<body class="rtl">
+
+<!-- MOBILE NAV -->
+<nav class="mobile-nav" id="mobileNav">
+    <a href="#hero" onclick="closeMobileNav()">الرئيسية</a>
+    <a href="#about" onclick="closeMobileNav()">من نحن</a>
+    <a href="#services" onclick="closeMobileNav()">خدماتنا</a>
+    <a href="#principals" onclick="closeMobileNav()">المستشارون</a>
+    <a href="#contact" onclick="closeMobileNav()">تواصل معنا</a>
+    <a href="index.html" class="lang-switch" style="margin-top:20px;">English</a>
+</nav>
+
+<!-- HEADER -->
+<header id="header">
+    <div class="container">
+        <div class="header-inner">
+            <a href="#hero" class="logo"><img src="assets/Logo.png" alt="إبسيلون للاستشارات"></a>
+            <nav class="nav-links">
+                <a href="#hero">الرئيسية</a>
+                <a href="#about">من نحن</a>
+                <a href="#services">خدماتنا</a>
+                <a href="#who-we-serve">من نخدم</a>
+                <a href="#principals">المستشارون</a>
+                <a href="#contact">تواصل معنا</a>
+            </nav>
+            <div class="header-actions">
+                <a href="index.html" class="lang-switch">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    English
+                </a>
+                <a href="#contact" class="btn btn-primary">احجز استشارة</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle" onclick="toggleMobileNav()" aria-label="القائمة">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+    <div class="container">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <span class="eyebrow">إبسيلون للاستشارات</span>
+                <h1>من الطموح إلى <span>الجاهزية التنظيمية</span></h1>
+                <p class="hero-subheadline">شركة استشارات متخصصة تساعد المنظمات الطموحة في قطر والمنطقة على تحديد استراتيجيتها، وتصميم نماذج التشغيل، وتعزيز الحوكمة، وبناء الجاهزية للابتكار.</p>
+                <p class="hero-body">نعمل مع المؤسسين وفرق القيادة ومجالس الإدارة والشركات الصغيرة والمتوسطة والشركات العائلية والمؤسسات التي تستعد للنمو أو التحول أو إعادة الهيكلة. نربط بين الاستراتيجية والتنفيذ من خلال تحويل الطموح إلى هياكل وأنظمة وممارسات وقدرات عملية.</p>
+                <div class="hero-ctas">
+                    <a href="#contact" class="btn btn-primary">ابدأ المحادثة</a>
+                    <a href="#services" class="btn btn-secondary">استكشف خدماتنا</a>
+                </div>
+                <p class="hero-trust">استشارات يقودها كبار الخبراء. تسليم عملي. مصمم للمنظمات المستعدة للنمو بوضوح وانضباط.</p>
+            </div>
+            <div class="hero-visual reveal reveal-delay-2">
+                <div class="hero-image-frame">
+                    <img src="assets/hero-custom.jpg" alt="لوحة تحكم استراتيجية مؤسسية — ذكاء قراري تنفيذي">
+                </div>
+                <div class="hero-badge hero-badge-1">
+                    <div class="badge-label">نطاق العمل</div>
+                    <div class="badge-value"><span>قطر</span> والمنطقة</div>
+                </div>
+                <div class="hero-badge hero-badge-2">
+                    <div class="badge-label">نوع الخدمة</div>
+                    <div class="badge-value"><span>استشارات</span> متخصصة</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- POSITIONING STRIP -->
+<section id="positioning">
+    <div class="container">
+        <div class="positioning-grid">
+            <div class="positioning-item reveal">
+                <svg class="positioning-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+                </svg>
+                <h4>متخصصون بالتصميم</h4>
+                <p>تعاملات مركزة يقودها مستشارون كبار، لا فرق متناوبة كبيرة.</p>
+            </div>
+            <div class="positioning-item reveal reveal-delay-1">
+                <svg class="positioning-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+                <h4>مبنيون لقطر والمنطقة</h4>
+                <p>مصمم حول واقع الأعمال المحلية والديناميكيات المؤسسية ومنظمات مراحل النمو.</p>
+            </div>
+            <div class="positioning-item reveal reveal-delay-2">
+                <svg class="positioning-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
+                </svg>
+                <h4>من الاستراتيجية إلى الهيكل</h4>
+                <p>نربط التوجه ونماذج التشغيل والحوكمة والأفراد وروتين التنفيذ.</p>
+            </div>
+            <div class="positioning-item reveal reveal-delay-3">
+                <svg class="positioning-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+                <h4>الجاهزية لا التبعية</h4>
+                <p>نترك للعملاء أدوات وأنظمة وروتين وقدرة داخلية حقيقية.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="container">
+        <div class="about-inner">
+            <div class="about-visual reveal">
+                <div class="about-image-frame">
+                    <img src="assets/hero-chess.jpg" alt="التفكير الاستراتيجي — الوضوح من خلال التعقيد">
+                </div>
+            </div>
+            <div class="about-content reveal reveal-delay-2">
+                <span class="eyebrow">عن إبسيلون للاستشارات</span>
+                <h2>شركة استشارات يقودها كبار الخبراء للمنظمات التي تستعد للمرحلة التالية من نموها</h2>
+                <p>تدعم إبسيلون للاستشارات المنظمات التي تجاوزت أساليب العمل غير الرسمية وتحتاج إلى وضوح أقوى وهيكل وحوكمة وانضباط في التنفيذ.</p>
+                <p>نساعد فرق القيادة على فهم وضعها الحالي، وتحديد وجهتها المستقبلية، وبناء الأسس التشغيلية اللازمة للوصول إليها.</p>
+                <p>يجمع نموذجنا الاستشاري بين تخصصين متكاملين: إدارة الابتكار والجاهزية المؤسسية، إلى جانب تصميم المنظمات وتطويرها. يتيح لنا ذلك دعم العملاء من الطموح الاستراتيجي وصولاً إلى الأدوار والعمليات وأنظمة الحوكمة والروتين اللازم للتسليم.</p>
+                <p>لا نقدم كتيبات جاهزة. نصمم حلولاً استشارية عملية تعكس نضج كل منظمة وطموحها وواقع سوقها وقدرتها الداخلية.</p>
+                <a href="#contact" class="btn btn-primary" style="margin-top: 32px;">ابدأ المحادثة</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="eyebrow">ماذا نفعل</span>
+            <h2>خدمات استشارية مصممة حول تحديات تنظيمية حقيقية</h2>
+            <p class="section-intro">خدماتنا مُعبَّأة في منتجات استشارية واضحة. كل منتج مصمم لحل تحدي محدد في القيادة أو النمو أو الحوكمة أو الابتكار أو نموذج التشغيل.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <div class="service-card-top">
+                    <h3>الاستراتيجية وجاهزية النمو</h3>
+                    <div class="service-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="service-desc">للمنظمات التي تحتاج إلى وضوح استراتيجي ومواءمة قيادية ومسار عملي نحو التنفيذ.</p>
+                <div class="service-details">
+                    <p>نساعد فرق القيادة على إعادة ضبط التوجه والاتفاق على الأولويات وترجمة الطموح إلى خارطة طريق تنفيذية لمدة 12 شهراً. تشمل التعاملات <strong>سبرينت إعادة ضبط الاستراتيجية</strong> و<strong>مختبر خطة التشغيل السنوية</strong> و<strong>عيادة الاستراتيجية التنفيذية</strong>.</p>
+                </div>
+            </div>
+            <div class="service-card reveal reveal-delay-1">
+                <div class="service-card-top">
+                    <h3>تصميم المنظمات ونموذج التشغيل</h3>
+                    <div class="service-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="service-desc">للمنظمات التي لم تواكب هياكلها وأدوارها وصنع قراراتها ومساءلتها النمو الذي حققته.</p>
+                <div class="service-details">
+                    <p>نصمم نموذج التشغيل المستهدف ونوضح الولايات الوظيفية ونضع أطر صلاحيات القرار ومصفوفات RACI وأنظمة مؤشرات الأداء. تشمل التعاملات <strong>تصميم نموذج التشغيل</strong> و<strong>حزمة إعادة الهيكلة التنظيمية</strong> و<strong>نظام الأداء والمساءلة</strong>.</p>
+                </div>
+            </div>
+            <div class="service-card reveal reveal-delay-2">
+                <div class="service-card-top">
+                    <h3>الابتكار والجاهزية المؤسسية</h3>
+                    <div class="service-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="service-desc">للمنظمات التي تريد الابتكار أو إطلاق مبادرات جديدة أو التعاون مع الشركات الناشئة بطريقة منظمة.</p>
+                <div class="service-details">
+                    <p>نقيّم نضج الابتكار ونصمم نماذج الحوكمة ونبني أطر حالات الاستخدام وعمليات إشراك الشركات الناشئة. تشمل التعاملات <strong>تقييم جاهزية الابتكار</strong> و<strong>نظام تشغيل الابتكار المؤسسي</strong> و<strong>برنامج جاهزية التعاون مع الشركات الناشئة</strong>.</p>
+                </div>
+            </div>
+            <div class="service-card reveal reveal-delay-3">
+                <div class="service-card-top">
+                    <h3>الحوكمة والأنظمة المؤسسية</h3>
+                    <div class="service-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="service-desc">للمنظمات التي تحتاج إلى توثيق أقوى وسياسات وإجراءات تشغيل موحدة ولجان وضوابط إدارية.</p>
+                <div class="service-details">
+                    <p>نضع نماذج الحوكمة وأطر تفويض الصلاحيات ومكتبات الإجراءات التشغيلية الموحدة وميثاق اللجان وقوالب التقارير الإدارية. تشمل التعاملات <strong>إعداد الحوكمة والإجراءات التشغيلية الموحدة</strong> و<strong>فعالية مجلس الإدارة واللجان</strong> و<strong>الانتقال من المؤسس إلى الإدارة</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHO WE SERVE -->
+<section id="who-we-serve">
+    <div class="container">
+        <div class="section-header centered reveal">
+            <span class="eyebrow">من نخدم</span>
+            <h2>مبنيون للمنظمات عند نقطة تحول</h2>
+        </div>
+        <div class="segments-grid segments-grid--5">
+            <div class="segment-card reveal">
+                <div class="segment-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <h4>الشركات العائلية</h4>
+                <p>احترفة صنع القرار وتقليل الاعتماد على المؤسس وبناء حوكمة للنمو المستدام.</p>
+            </div>
+            <div class="segment-card reveal reveal-delay-1">
+                <div class="segment-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                </div>
+                <h4>الشركات الصغيرة والمتوسطة</h4>
+                <p>تعزيز نماذج التشغيل وأنظمة الأداء والتخطيط الاستراتيجي وروتين الإدارة.</p>
+            </div>
+            <div class="segment-card reveal reveal-delay-2">
+                <div class="segment-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                </div>
+                <h4>الجهات الحكومية المرتبطة</h4>
+                <p>تصميم نماذج التشغيل وهياكل الحوكمة ومؤشرات الأداء والأطر الجاهزة للتنفيذ.</p>
+            </div>
+            <div class="segment-card reveal reveal-delay-3">
+                <div class="segment-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+                </div>
+                <h4>فرق الابتكار المؤسسي</h4>
+                <p>هيكلة محافظ الابتكار ونماذج إشراك الشركات الناشئة والتجارب وعمليات الحوكمة.</p>
+            </div>
+            <div class="segment-card reveal reveal-delay-4">
+                <div class="segment-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                </div>
+                <h4>المؤسسات في التحول</h4>
+                <p>دعم المنظمات التي تمر بإعادة هيكلة أو تحولات في الولاية أو مراحل نمو أو تحول داخلي.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHY EPSILON -->
+<section id="why-epsilon">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="eyebrow">لماذا إبسيلون</span>
+            <h2 style="color:white;">ما الذي يميزنا</h2>
+        </div>
+        <div class="why-grid">
+            <div class="why-item reveal">
+                <div class="why-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                </div>
+                <h4>قيادة كبار الخبراء من البداية للنهاية</h4>
+                <p>تعاملاتنا يقودها مباشرة مستشارون رئيسيون بخبرة عميقة في الابتكار والجاهزية المؤسسية وتصميم المنظمات.</p>
+            </div>
+            <div class="why-item reveal reveal-delay-1">
+                <div class="why-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                </div>
+                <h4>عملي لا نظري</h4>
+                <p>نركز على الأدوات والهياكل وروتين الحوكمة ولوحات المعلومات ووضوح الأدوار وخطط التنفيذ التي يمكن للعملاء استخدامها فعلاً.</p>
+            </div>
+            <div class="why-item reveal reveal-delay-2">
+                <div class="why-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                    </svg>
+                </div>
+                <h4>مصمم لواقع السوق القطري</h4>
+                <p>نفهم احتياجات الشركات الصغيرة والمتوسطة والشركات العائلية والمؤسسات العاملة في قطر والمنطقة.</p>
+            </div>
+            <div class="why-item reveal reveal-delay-3">
+                <div class="why-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                    </svg>
+                </div>
+                <h4>الاستراتيجية متصلة بالتنفيذ</h4>
+                <p>نساعد العملاء على ترجمة الاستراتيجية إلى نماذج تشغيل وصلاحيات قرار ومؤشرات أداء وعمليات وروتين.</p>
+            </div>
+            <div class="why-item reveal reveal-delay-4">
+                <div class="why-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                </div>
+                <h4>متخصصون بالتصميم</h4>
+                <p>نبقى مركزين ومتجاوبين ومخصصين. يعمل العملاء مع مستشارين كبار لا فرق متناوبة كبيرة.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRINCIPALS -->
+<section id="principals">
+    <div class="container">
+        <div class="section-header centered reveal">
+            <span class="eyebrow">المستشارون الرئيسيون</span>
+            <h2>تخصصان استشاريان متكاملان</h2>
+            <p class="section-intro">تقود إبسيلون للاستشارات مستشاران رئيسيان تجمع خبرتهما بين إدارة الابتكار والجاهزية المؤسسية وتصميم المنظمات وتطويرها.</p>
+        </div>
+        <div class="principals-grid">
+            <div class="principal-card reveal">
+                <div class="principal-photo">
+                    <img src="assets/Enad.png" alt="عناد ح. كنعان — مستشار رئيسي">
+                </div>
+                <div class="principal-info">
+                    <h3>عناد ح. كنعان</h3>
+                    <span class="principal-title">مستشار رئيسي، إدارة الابتكار والجاهزية المؤسسية</span>
+                    <div class="principal-focus">
+                        <span class="focus-tag">إدارة الابتكار</span>
+                        <span class="focus-tag">الجاهزية المؤسسية</span>
+                        <span class="focus-tag">منظومة الشركات الناشئة</span>
+                        <span class="focus-tag">تنفيذ الاستراتيجية</span>
+                        <span class="focus-tag">تصميم البرامج</span>
+                        <span class="focus-tag">استشارات النمو</span>
+                    </div>
+                    <a href="https://linkedin.com/in/enadkanaan" target="_blank" rel="noopener" class="principal-linkedin">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        تواصل على لينكدإن
+                    </a>
+                </div>
+            </div>
+            <div class="principal-card reveal reveal-delay-2">
+                <div class="principal-photo">
+                    <img src="assets/Alaa.jpg" alt="علاء البشير — مستشارة رئيسية">
+                </div>
+                <div class="principal-info">
+                    <h3>علاء البشير</h3>
+                    <span class="principal-title">مستشارة رئيسية، تصميم المنظمات وتطويرها</span>
+                    <div class="principal-focus">
+                        <span class="focus-tag">تصميم المنظمات</span>
+                        <span class="focus-tag">نموذج التشغيل</span>
+                        <span class="focus-tag">الحوكمة</span>
+                        <span class="focus-tag">أنظمة الأداء</span>
+                        <span class="focus-tag">التطوير التنظيمي</span>
+                        <span class="focus-tag">التغيير والقدرات</span>
+                    </div>
+                    <a href="https://linkedin.com/in/alaaalbashir" target="_blank" rel="noopener" class="principal-linkedin">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        تواصل على لينكدإن
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HOW WE WORK -->
+<section id="how-we-work">
+    <div class="container">
+        <div class="section-header centered reveal">
+            <span class="eyebrow">كيف نعمل</span>
+            <h2>عملية واضحة من التشخيص إلى التسليم</h2>
+        </div>
+        <div class="process-steps">
+            <div class="process-step reveal">
+                <div class="step-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3>التشخيص</h3>
+                    <p>نقيّم الوضع الراهن ونوضح المشكلة الحقيقية ونحدد الثغرات المؤثرة على الاستراتيجية أو الهيكل أو الحوكمة أو الابتكار أو التنفيذ.</p>
+                </div>
+            </div>
+            <div class="process-step reveal reveal-delay-1">
+                <div class="step-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3>المواءمة</h3>
+                    <p>نعمل مع فرق القيادة للتوافق على الأولويات والقرارات والأدوار ومستوى التغيير المطلوب.</p>
+                </div>
+            </div>
+            <div class="process-step reveal reveal-delay-2">
+                <div class="step-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3>التصميم</h3>
+                    <p>نصمم النموذج المستهدف والأدوات والأطر وروتين الحوكمة ومخرجات المنتجات اللازمة للمرحلة التالية للمنظمة.</p>
+                </div>
+            </div>
+            <div class="process-step reveal reveal-delay-3">
+                <div class="step-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3>التمكين</h3>
+                    <p>ندعم التسليم ونقل القدرات وجاهزية التنفيذ من خلال ورش العمل والقوالب ولوحات المعلومات والدعم الاستشاري.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ENGAGEMENT MODELS -->
+<section id="engagement-models">
+    <div class="container">
+        <div class="section-header centered reveal">
+            <span class="eyebrow">نماذج التعامل</span>
+            <h2>ثلاث طرق للعمل معنا</h2>
+        </div>
+        <div class="engagement-grid">
+            <div class="engagement-card reveal">
+                <div class="engagement-badge">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </div>
+                <h3>منتجات التشخيص</h3>
+                <p class="engagement-desc">تعاملات قصيرة محددة النطاق تقيّم الجاهزية وتحدد الثغرات وتوصي بالخطوات العملية التالية.</p>
+                <p class="engagement-examples">فحص صحة المنظمة، تقييم جاهزية الابتكار، مراجعة ثغرات الحوكمة</p>
+            </div>
+            <div class="engagement-card reveal reveal-delay-1">
+                <div class="engagement-badge">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                </div>
+                <h3>منتجات التصميم</h3>
+                <p class="engagement-desc">تعاملات استشارية منظمة تبني النموذج والأدوات والأطر وأنظمة الحوكمة التي يحتاجها العميل.</p>
+                <p class="engagement-examples">تصميم نموذج التشغيل، سبرينت إعادة ضبط الاستراتيجية، إعداد الحوكمة والإجراءات التشغيلية الموحدة</p>
+            </div>
+            <div class="engagement-card reveal reveal-delay-2">
+                <div class="engagement-badge">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <h3>الاستشارات المستمرة</h3>
+                <p class="engagement-desc">دعم كبار الخبراء المستمر لفرق القيادة خلال التنفيذ وصنع القرار ومراجعة الأداء.</p>
+                <p class="engagement-examples">استشارة تنفيذية مستمرة، دعم مكتب تنفيذ الاستراتيجية، استشارة محفظة الابتكار</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="container">
+        <div class="contact-inner">
+            <div class="contact-info reveal">
+                <span class="eyebrow">ابدأ المحادثة</span>
+                <h2>هل أنت مستعد لبناء الهيكل خلف طموحك؟</h2>
+                <p>سواء كنت تستعد للنمو أو تعيد هيكلة منظمتك أو تبني وظيفة ابتكار أو تحترف أنظمة الحوكمة، يمكننا مساعدتك في توضيح المسار وبناء الجاهزية للتنفيذ.</p>
+                <div class="contact-detail">
+                    <div class="contact-detail-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <div class="contact-detail-text">
+                        <span class="label">البريد الإلكتروني</span>
+                        <a href="mailto:hello@epsilonadvisory.com" class="value">hello@epsilonadvisory.com</a>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-detail-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div class="contact-detail-text">
+                        <span class="label">الموقع</span>
+                        <span class="value">الدوحة، قطر</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form reveal reveal-delay-2">
+                <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">الاسم</label>
+                            <input type="text" id="name" name="name" placeholder="اسمك الكامل" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="organization">المنظمة</label>
+                            <input type="text" id="organization" name="organization" placeholder="اسم منظمتك">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">الهاتف</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+974 xxxx xxxx">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="support">بماذا تود الحصول على الدعم؟</label>
+                        <select id="support" name="support">
+                            <option value="" disabled selected>اختر مجال الدعم</option>
+                            <option value="strategy">الاستراتيجية</option>
+                            <option value="operating-model">نموذج التشغيل</option>
+                            <option value="innovation">جاهزية الابتكار</option>
+                            <option value="governance">الحوكمة</option>
+                            <option value="founder-transition">الانتقال من المؤسس</option>
+                            <option value="other">أخرى</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">الرسالة</label>
+                        <textarea id="message" name="message" placeholder="أخبرنا عن منظمتك وما تسعى إلى تحقيقه..."></textarea>
+                    </div>
+                    <p class="form-consent">بتقديم هذا النموذج، توافق على التواصل معك من قِبَل إبسيلون للاستشارات بشأن استفسارك. نحترم خصوصيتك ولن نشارك معلوماتك مع أطراف ثالثة.</p>
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary">إرسال الاستفسار</button>
+                    </div>
+                </form>
+                <div class="form-success" id="formSuccess">
+                    <div class="form-success-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                    <h3>شكراً على رسالتك.</h3>
+                    <p>سنتواصل معك في أقرب وقت ممكن.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="assets/Logo.png" alt="إبسيلون للاستشارات">
+                <p>استشارات متخصصة للنمو والابتكار والجاهزية التنظيمية.</p>
+            </div>
+            <div class="footer-col">
+                <h5>التنقل</h5>
+                <ul>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#services">خدماتنا</a></li>
+                    <li><a href="#who-we-serve">من نخدم</a></li>
+                    <li><a href="#principals">المستشارون</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>تواصل معنا</h5>
+                <ul>
+                    <li><a href="mailto:hello@epsilonadvisory.com">hello@epsilonadvisory.com</a></li>
+                    <li><a href="#contact">احجز استشارة</a></li>
+                    <li><a href="index.html">English</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">© 2026 إبسيلون للاستشارات. جميع الحقوق محفوظة.</p>
+            <div class="footer-lang">
+                <a href="index-ar.html" class="active">عربي</a>
+                <span>|</span>
+                <a href="index.html">English</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 50); });
+    function toggleMobileNav() {
+        const nav = document.getElementById('mobileNav');
+        const toggle = document.getElementById('menuToggle');
+        nav.classList.toggle('open'); toggle.classList.toggle('open');
+        document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+    }
+    function closeMobileNav() {
+        document.getElementById('mobileNav').classList.remove('open');
+        document.getElementById('menuToggle').classList.remove('open');
+        document.body.style.overflow = '';
+    }
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+    function handleFormSubmit(e) {
+        e.preventDefault();
+        document.getElementById('contactForm').style.display = 'none';
+        document.getElementById('formSuccess').classList.add('visible');
+    }
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) { e.preventDefault(); closeMobileNav(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+        });
+    });
+</script>
+</body>
+</html>
